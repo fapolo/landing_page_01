@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: roboto;
+}
+
+/* 
+/////////////////////
+NAV BAR
+/////////////////////
+*/
+.nav {
+    position: relative;
+    align-items: center;
+    margin: 30px 140px;
+}
+
+.brand-name {
+    color: #222427;
+    padding: 0;
+    float: left;
+    margin-top: -30px;
+    margin-left: 40px;
+    font-weight: 700;
+}
+
+.nav-menu {
+    float: right;
+}
+
+.nav-menu-item {
+    color: #222427;
+    float: right;
+    list-style: none;
+    padding: 20px;
+    margin-top: -50px;
+    transition: .2s;
+}
+
+.nav-menu-item:hover {
+    color: #1CD0A1;
+}
+
+.nav-menu-item a,
+.nav-menu-item a:active,
+.nav-menu-item a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 
+/////////////////////
+DOWNLOAD SECTION
+/////////////////////
+*/
+
+.download {
+    margin-top: 70px;
+    text-align: center;
+}
+
+.header {
+   font-weight: 100; 
+   font-size: 37px;
+   width: 536px;
+   height: 153px;
+   margin-left: 50%;
+   transform: translateX(-50%);
+}
+
+.button {
+    position: relative;
+    width: 300px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.button-download {
+    border: none;
+    background-color: #222F3E;
+    margin-top: -50px;
+    padding: 25px 60px;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: inherit;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.button-download:hover {
+    background-color: #38475e;
+    transform: translateY(-3px);
+}
+
+.button-download:active {
+    transform: translateY(0);
+}
+
+.button-version {
+    background-color: #CD6BFF;
+    color: white;
+    font-size: 12px;
+    width: 73px;
+    height: 31px;
+    border-radius: 5px;
+    padding-top: 8px;
+    position: absolute;
+    transform: translateX(220px) translateY(-85px);
+}
+
+/* 
+/////////////////////
+IMG + FOOTER
+/////////////////////
+*/
+
+.sample-image {
+    width: 43%;
+    height: 43%;
+    margin-top: 70px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 5px 25px rgba(57,78,109,.1);
+}
+
+.footer {
+    background-color: #596274;
+    margin-top: 30px;
+    padding: 30px 140px;
+    color: white;
+}
+
+.footer-text {
+    text-align: center;
+    font-size: 12px;
+}
+
+.footer-text a {
+    color: inherit;
+}
+
+.footer-text a:hover {
+    color: #1CD0A1;
+}
