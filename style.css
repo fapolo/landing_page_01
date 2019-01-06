@@ -10,6 +10,7 @@
 
 body {
     font-family: roboto;
+    position: relative;
 }
 
 /* 
@@ -129,14 +130,17 @@ IMG + FOOTER
     margin-top: 70px;
     margin-left: 50%;
     transform: translateX(-50%);
-    box-shadow: 0px 5px 25px rgba(57,78,109,.1);
+    box-shadow: 0px 5px 25px rgba(57,78,109,.1);    
 }
 
 .footer {
     background-color: #596274;
-    margin-top: 30px;
     padding: 30px 140px;
     color: white;
+    z-index: 5;
+    margin-top: -50px;
+    position: absolute; 
+    width: 100vw;
 }
 
 .footer-text {
@@ -150,4 +154,47 @@ IMG + FOOTER
 
 .footer-text a:hover {
     color: #1CD0A1;
+}
+
+/* 
+/////////////////////
+BACKGROUND COMPOSITION
+/////////////////////
+*/
+
+.background-composition {
+    width: 100vw;
+    height: 300px;
+    margin-top: -200px;
+}
+
+.gradient-img-1 {
+    width: 100vw;
+    height: 300px;
+    background: url(./src/path-1.svg);
+    background-repeat: no-repeat;
+    z-index: 2;
+    position:absolute;
+    transform: translateX(-5vw);
+}
+
+.gradient-img-2 {
+    width: 100vw;
+    height: 300px;
+    background: url(./src/path-2.svg);
+    background-repeat: no-repeat;
+    z-index: -1;
+    position:absolute;
+    transform: translateX(5vw);
+}
+
+.gradient-img-3 {
+    width: 100vw;
+    height: 300px;
+    background: url(./src/path-3.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: -2;
+    position:absolute;
+    transform: translateX(-10vw) translateY(-2vw);
 }
