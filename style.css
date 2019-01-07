@@ -39,7 +39,7 @@ NAV BAR
 
 .nav-menu-item {
     color: #222427;
-    float: right;
+    float: left;
     list-style: none;
     padding: 20px;
     margin-top: -50px;
