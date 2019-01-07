@@ -208,31 +208,35 @@ BACKGROUND COMPOSITION
 
 .gradient-img-1 {
     width: 100vw;
-    height: 300px;
+    height: 45vh;
     background: url(./src/path-1.svg);
     background-repeat: no-repeat;
+    background-size: 100vw 100vh;
     z-index: 2;
     position:absolute;
-    transform: translateX(-5vw);
+    transform: translate(-10vw, -5vh);
 }
 
 .gradient-img-2 {
     width: 100vw;
-    height: 300px;
+    height: 45vh;
     background: url(./src/path-2.svg);
     background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 100vw 100vh;
     z-index: -1;
     position:absolute;
-    transform: translateX(5vw);
+    transform: translate(2vw, -8vh);
 }
 
 .gradient-img-3 {
     width: 100vw;
-    height: 300px;
+    height: 45vh;
     background: url(./src/path-3.svg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-position: top right;
+    background-size: 100vw 100vh;
     z-index: -2;
     position:absolute;
-    transform: translateX(-10vw) translateY(-2vw);
+    transform: translate(-8vw, -8vh);
 }
