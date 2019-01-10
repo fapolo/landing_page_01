@@ -202,41 +202,42 @@ BACKGROUND COMPOSITION
 
 .background-composition {
     width: 100vw;
-    height: 300px;
-    margin-top: -200px;
+    height: 120px;
+    position: relative;
 }
 
 .gradient-img-1 {
     width: 100vw;
-    height: 45vh;
+    height: 300px;
+    margin-left: -10%;
+    transform: translateY(-20vh);
     background: url(./src/path-1.svg);
     background-repeat: no-repeat;
-    background-size: 100vw 100vh;
+    background-position: top;
     z-index: 2;
     position:absolute;
-    transform: translate(-10vw, -5vh);
 }
 
 .gradient-img-2 {
     width: 100vw;
-    height: 45vh;
+    height: 310px;
+    transform: translateY(-25vh);
     background: url(./src/path-2.svg);
     background-repeat: no-repeat;
-    background-position: top right;
-    background-size: 100vw 100vh;
+    background-position: top left;
+    background-size: 103vw;
     z-index: -1;
-    position:absolute;
-    transform: translate(2vw, -8vh);
+    position: absolute;
 }
 
 .gradient-img-3 {
     width: 100vw;
-    height: 45vh;
+    height: 310px;
+    transform: translateY(-25vh);
     background: url(./src/path-3.svg);
     background-repeat: no-repeat;
     background-position: top right;
-    background-size: 100vw 100vh;
+    background-size: 110vw;
     z-index: -2;
-    position:absolute;
-    transform: translate(-8vw, -8vh);
+    position: absolute;
 }
