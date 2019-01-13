@@ -1,7 +1,7 @@
-var menuOptions = document.getElementsByClassName("nav-menu-item");
-var popupMessage = document.getElementById("nav-message");
-var button = document.getElementById("button-download");
-var popupDownload = document.getElementById("button-message");
+const menuOptions = document.getElementsByClassName("nav-menu-item");
+const popupMessage = document.getElementById("nav-message");
+const button = document.getElementById("button-download");
+const popupDownload = document.getElementById("button-message");
 
 for (var i = 0; i < menuOptions.length; i++) {
     menuOptions[i].addEventListener("click", function(){
