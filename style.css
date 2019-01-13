@@ -202,13 +202,13 @@ BACKGROUND COMPOSITION
 
 .background-composition {
     width: 100vw;
-    height: 120px;
+    height: 130px;
     position: relative;
 }
 
 .gradient-img-1 {
     width: 100vw;
-    height: 300px;
+    height: 270px;
     margin-left: -10%;
     transform: translateY(-20vh);
     background: url(./src/path-1.svg);
@@ -220,7 +220,7 @@ BACKGROUND COMPOSITION
 
 .gradient-img-2 {
     width: 100vw;
-    height: 310px;
+    height: 320px;
     transform: translateY(-25vh);
     background: url(./src/path-2.svg);
     background-repeat: no-repeat;
@@ -232,7 +232,7 @@ BACKGROUND COMPOSITION
 
 .gradient-img-3 {
     width: 100vw;
-    height: 310px;
+    height: 320px;
     transform: translateY(-25vh);
     background: url(./src/path-3.svg);
     background-repeat: no-repeat;
@@ -240,4 +240,83 @@ BACKGROUND COMPOSITION
     background-size: 110vw;
     z-index: -2;
     position: absolute;
+}
+
+/* 
+/////////////////////
+MEDIA QUERIES
+/////////////////////
+*/
+
+@media (max-width:1440px) {
+    .sample-image {
+        width: 50%;
+        height: 50%;
+        margin-top: 70px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        box-shadow: 0px 5px 25px rgba(57,78,109,.1);    
+    }
+
+    .gradient-img-2 {
+        width: 100vw;
+        height: 260px;
+        transform: translateY(-21vh);
+        background: url(./src/path-2.svg);
+        background-repeat: no-repeat;
+        background-position: top left;
+        background-size: 103vw;
+        z-index: -1;
+        position: absolute;
+    }
+    
+    .gradient-img-3 {
+        width: 100vw;
+        height: 260px;
+        transform: translateY(-21vh);
+        background: url(./src/path-3.svg);
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: 110vw;
+        z-index: -2;
+        position: absolute;
+    }
+}
+
+@media (max-width:1024px) {
+    .gradient-img-1 {
+        width: 100vw;
+        height: 250px;
+        margin-left: -10%;
+        transform: translateY(-13vh);
+        background: url(./src/path-1.svg);
+        background-repeat: no-repeat;
+        background-position: top;
+        z-index: 2;
+        position:absolute;
+    }
+
+    .gradient-img-2 {
+        width: 100vw;
+        height: 260px;
+        transform: translateY(-15vh);
+        background: url(./src/path-2.svg);
+        background-repeat: no-repeat;
+        background-position: top left;
+        background-size: 103vw;
+        z-index: -1;
+        position: absolute;
+    }
+    
+    .gradient-img-3 {
+        width: 100vw;
+        height: 260px;
+        transform: translateY(-18vh);
+        background: url(./src/path-3.svg);
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: 110vw;
+        z-index: -2;
+        position: absolute;
+    }
 }
